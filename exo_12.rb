@@ -1,10 +1,14 @@
 puts "Bonjour, en quelle année êtes-vous née?"
 print "> " 
 user_birth_year = gets.chomp.to_i 
-(year == 23).times do |i| # (1)code pour calculer de l'année de naissance à aujourd'hui
+
+current_year = 2024
+user_age = current_year - user_birth_year
+
+(year = 23).times do |i| # (1)code pour calculer de l'année de naissance à aujourd'hui
     year = i
-    if age == 21
-      puts "Il y a #{user_birth_year} ans, tu avais #{Year}ns!"
+    if year == 21
+      puts "#{user_birth_year + 1} - année : tu as #{user_age} ans : tu avais #{year}ans!"
     end
-    puts "#{user_birth_year + i} - year : tu as 36 ans: tu avais #{year} ans" # (1)code pour calculer de l'année de naissance à aujourd'hui + texte tu avais ... ans
+    puts "Il y a #{user_age / 2} ans, tu avais la moitie de l'âge que tu as aujourd'hui." if user_age == 23 
 end
