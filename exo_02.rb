@@ -1,3 +1,3 @@
-print "Quel est votre prénom" # remets la question pour l'utilisateur
+print "Quel est votre prénom ?" # remets la question pour l'utilisateur
 prenom = gets.chomp
-puts "Bonjour, #{prenom}"
+puts "Bonjour,#{prenom} !"
