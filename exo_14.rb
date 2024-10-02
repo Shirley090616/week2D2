@@ -5,8 +5,7 @@ fake_emails  = [] # Programme pour générer une liste de faux emails
   fake_email = "jean.dupont.#{number}@email.fr"
   fake_emails << fake_email
 end
+even_emails = fake_emails.select {|email| email[-5].to_i.even?} # Filtrer et afficher uniquement les emails avec un nombre pair
 
-even_emails = fake_emails.select {|email| email[-5].to_i.even?}
-# Filtrer et afficher uniquement les emails avec un nombre pair
 puts "Emails with an even number:"
 puts even_emails
